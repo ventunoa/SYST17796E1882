@@ -5,7 +5,6 @@
  */
 
 package com.mycompany.tempaverage;
-
 /**
  *
  * @author Noah
@@ -19,7 +18,6 @@ public static void main(String[] args){
 }
 
 public static int calcAvg (int [] temps){
-
         int avg = 0;
         int incorrectCount = 0;
         for (int i=0;i<temps.length;i++) {
@@ -28,12 +26,9 @@ public static int calcAvg (int [] temps){
         		continue;
         	}
         	else
-        		avg += temps[i];
-        	
+        		avg += temps[i];	
         }
         avg = avg/(temps.length - incorrectCount);
-		return avg;
-        
+		return avg;    
 }
-
 }
